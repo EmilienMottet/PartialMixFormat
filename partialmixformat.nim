@@ -82,7 +82,7 @@ proc main(): string  =
   var (_ , name_tempfile_final) = mkstemp()
   # echo name_tempfile_final
 
-  var res = ""
+  var res = filename & "\n"
 
   for c in only_match:
     res = res & c.txt
